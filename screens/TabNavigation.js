@@ -20,8 +20,8 @@ export default function TabNavigation() {
             <Tab.Navigator
                 screenOptions={{
                      headerShown: false,
-                     tabBarStyle: {height: responsiveHeight(10.22), paddingTop: responsiveHeight(1.3)},
-                     tabBarLabelStyle: {paddingBottom: responsiveHeight(2.7)},
+                     tabBarStyle: {height: responsiveHeight(10.22), paddingTop: responsiveHeight(1)},
+                     tabBarLabelStyle: {paddingBottom: responsiveHeight(0)},
                      tabBarActiveTintColor: "#026670",
                      tabBarInactiveTintColor: "#7D7D7D",}}
             >
