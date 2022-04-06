@@ -8,10 +8,9 @@ import {
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from "./HomePage"
-import ScanScreen from "./ScanPage"
 import SavedScreen from "./SavedPage"
 import AccountScreen from "./AccountPage"
-
+import ScanStack from "./Stack"
 const Tab = createBottomTabNavigator();
 
 export default function TabNavigation() {
@@ -41,7 +40,7 @@ export default function TabNavigation() {
                 />
                 <Tab.Screen 
                     name="SCAN" 
-                    component={ScanScreen}
+                    component={ScanStack}
                     options={{
                         tabBarIcon : ({ focused }) => {
                             return (focused ?

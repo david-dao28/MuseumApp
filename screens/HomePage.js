@@ -12,12 +12,20 @@ export default function HomePage() {
       >
         <View style={styles.searchBar}>
           <Image
+            style={styles.searchBarImage}
             source={require("../images/search_bar.png")} 
           />
           <Image
             style={{
               bottom: responsiveHeight(4),
-              left: responsiveWidth(90)
+              left: responsiveWidth(5)
+            }}
+            source={require("../images/Union.png")} 
+          />
+          <Image
+            style={{
+              bottom: responsiveHeight(6.2),
+              left: responsiveWidth(83)
             }}
             source={require("../images/mic.png")} 
           />
@@ -29,7 +37,7 @@ export default function HomePage() {
           />
         </View>
         <Image
-            style={{right: responsiveWidth(43)}}
+            style={{right: responsiveWidth(43), bottom: responsiveHeight(1.3)}}
             source={require("../images/filter.png")} 
         />
         <Text style={styles.primaryTitle}>
@@ -72,6 +80,7 @@ export default function HomePage() {
             source={require("../images/whats_on.png")} 
         />
         <Image
+            style={{left: responsiveWidth(6)}}
             source={require("../images/carouselwhatson.png")} 
         />
         <Image
@@ -79,6 +88,7 @@ export default function HomePage() {
             source={require("../images/Recommended.png")} 
         />
         <Image
+            style={{left: responsiveWidth(4)}}
             source={require("../images/Carousel.png")} 
         />
         <Image
@@ -86,6 +96,7 @@ export default function HomePage() {
             source={require("../images/Interactive.png")} 
         />
         <Image
+            style={{left: responsiveWidth(4)}}
             source={require("../images/Carousel.png")} 
         />
         <Image
@@ -93,6 +104,7 @@ export default function HomePage() {
             source={require("../images/Special_Event.png")} 
         />
         <Image
+            style={{left: responsiveWidth(4)}}
             source={require("../images/Carousel.png")} 
         />
       </ScrollView>
@@ -110,8 +122,8 @@ const styles = StyleSheet.create({
       top: responsiveHeight(6),
     },
     input: {
-      bottom: responsiveHeight(8.5),
-      left: responsiveWidth(13.5),
+      bottom: responsiveHeight(10.5),
+      left: responsiveWidth(11.5),
       height: responsiveHeight(6.16),
       width: responsiveWidth(80)
     },
@@ -137,6 +149,11 @@ const styles = StyleSheet.create({
     buttons: {
       left: responsiveWidth(7), 
       padding: responsiveHeight(2)
-    }
+    },
+    searchBarImage: {
+      width: 360,
+      height: 50,
+      resizeMode: 'contain'
+  }
   });
   

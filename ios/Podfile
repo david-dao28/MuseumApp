@@ -7,6 +7,9 @@ platform :ios, '12.0'
 require 'json'
 podfile_properties = JSON.parse(File.read('./Podfile.properties.json')) rescue {}
 
+permissions_path = '../node_modules/react-native-permissions/ios'
+pod 'Permission-Camera', :path => "#{permissions_path}/Camera"
+
 target 'MuseumApp' do
   use_expo_modules!
   config = use_native_modules!
